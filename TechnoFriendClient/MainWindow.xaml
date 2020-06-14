@@ -1,0 +1,27 @@
+﻿<Window x:Class="TechnoFriendClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TechnoFriendClient"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="TechnoFriend Backup Client" Height="450" Width="400" StateChanged="Window_StateChanged">
+    <Grid Background="DimGray">
+        <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Background="Gray" Orientation="Horizontal">
+            <Image Source="Resources/logo.ico" Width="40" HorizontalAlignment="Left" Margin="5,5,0,5"></Image>
+            <TextBlock Text="TechnoFriend Backup Client" VerticalAlignment="Center" Foreground="White" FontSize="20" Margin="5,0,0,0"></TextBlock>
+            <Ellipse Width="20" Height="20" Fill="Red" MouseDown="Ellipse_MouseDown" Margin="70,-20,0,0">
+                </Ellipse>
+            <CheckBox Margin="-18,30,0,0" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"></CheckBox>
+            
+            
+        </StackPanel>
+        <ListBox Grid.Row="1" Margin="10" Name="logger"></ListBox>
+    </Grid>
+</Window>

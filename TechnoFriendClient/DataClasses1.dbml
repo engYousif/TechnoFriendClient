@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="tfclient" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\tfclient.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="TechnoFriendClient.Properties.Settings" SettingsPropertyName="tfclientConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[log]" Member="logs">
+    <Type Name="log">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="time" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="total" Member="filesCount" Storage="_total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.history" Member="histories">
+    <Type Name="history">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[log]" Member="log" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
