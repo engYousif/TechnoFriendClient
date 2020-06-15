@@ -24,4 +24,3 @@ C:\Users\user\source\repos\TechnoFriendClient\TechnoFriendClient\obj\Release\Tec
 C:\Users\user\source\repos\TechnoFriendClient\TechnoFriendClient\obj\Release\TechnoFriendClient.csproj.CopyComplete
 C:\Users\user\source\repos\TechnoFriendClient\TechnoFriendClient\obj\Release\TechnoFriendClient.exe
 C:\Users\user\source\repos\TechnoFriendClient\TechnoFriendClient\obj\Release\TechnoFriendClient.pdb
-C:\Users\user\source\repos\TechnoFriendClient\TechnoFriendClient\obj\Release\TechnoFriendClient.csprojAssemblyReference.cache
